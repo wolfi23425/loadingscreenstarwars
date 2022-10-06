@@ -1,0 +1,26 @@
+
+// Star Wars Load
+
+Firstly I'd like to thank you for purchasing this loading screen.  It means a huge deal to me and hopefully you'll be satifised with it. Secondly, I'd like to encourage you to contact me (on steam please) if you discover that someone has leaked this loading screen. It is of great importance to me that this keeps selling as this supports my goal(s). Thank you.
+
+--Music
+If you want music on your loading screen, simply drop .OGG files in the music folder. You can drop as many as you'd like. The script will then choose, at random, one of these songs and play them whilst displaying their name. If you do not want the music to be played, simply empty the music  folder and a text-slider will be shown instead (of which you can edit of course). This is good for those who perhaps do not want to play any music. It is important though that the music folder is clear of ANY files if you do not want it to play music and make sure it is only .OGG files, other files in there will make the script fail.
+
+You can change volume on index page.
+
+If you want the star wars theme song, you'll have to download it from here as it is not apart of this package. Drop it in the music folder. http://www.mediafire.com/download/il5w19wpfhewjsi/Star_Wars_Soundtrack.ogg
+
+
+--Edit HTML
+You can freely edit the HTML if you want, but if you simply want to change the text part, simply head to the config.php file and edit within that file and it will update the main file. Please do check on the loading page in your browser before you release it on the live server, as there may be configurations that you need to do.
+
+--Copyright & License
+This is a copyrighted script and may not be redistributed, uploaded or sold to a third party - this includes doing it to your friends. Please have some respect towards what has gone in to this project and do not share it, please. 
+
+--Disclaimer
+I do not own the rights to the franchise "Star Wars".. No actual product of their production is in the loadingscreen that I am selling. The theme song is apart of the project in a none earning way, meaning the price won't differ if I'd remove the file. I am taking charge for the design!
+
+
+
+King Regards,
+Floodify - Creator of this Striper Loading, Tellus Load, Camltee Load & Star Wars Load

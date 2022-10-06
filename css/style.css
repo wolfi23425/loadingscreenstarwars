@@ -1,0 +1,532 @@
+@import "compass/css3";
+@import url(http://fonts.googleapis.com/css?family=News+Cycle:400,700);
+html {
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+body {
+    background-color: black;
+    background-position: center bottom, left top;
+    background-repeat: no-repeat;
+    font-family: starwarsnormal;
+    font-weight: normal;
+    font-size: 11pt;
+    margin: 0;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+@font-face {
+    font-family: starwarshollow;
+    src: url(../fonts/Starjhol.woff);
+}
+@font-face {
+    font-family: starwarsnormal;
+    src: url(../fonts/SerifGothicBQ-ExtraBold.woff);
+}
+@font-face {
+    font-family: starwarshead;
+    src: url(../fonts/Starjedi.woff);
+}
+@keyframes loadIn {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@-webkit-keyframes loadIn {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes loadOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+@-webkit-keyframes loadOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+@-webkit-keyframes intro {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+/*Load piece */
+
+.intro-page {
+    background-color: black;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    animation: loadOut 0.5s 1;
+    -webkit-animation: loadOut 0.5s 1;
+    animation-fill-mode: forwards;
+    animation-delay: 15s;
+    -webkit-animation-delay: 15s;
+    /* Safari and Chrome */
+    
+    -webkit-animation-fill-mode: forwards;
+}
+.intro-text {
+    font-family: "News Cycle", sans-serif;
+    text-align: center;
+    margin-top: 20%;
+    font-size: 30px;
+    font-weight: 400;
+    color: rgb(75, 213, 238);
+    opacity: 0;
+    -webkit-animation: intro 6s ease-out 1s;
+	z-index: 1000;
+}
+.rest-page {
+    background-color: black;
+    z-index: -100;
+}
+.text-middle2 {
+    width: 70%;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    -webkit-transform: translate(-50%, -35%);
+    transform: translate(-50%, -35%);
+    opacity: 0;
+    -webkit-animation: loadIn 16s ease-out 0.5s;
+    z-index: 100;
+}
+p.server-intro-name {
+    font-family: starwarshead;
+    font-size: 90pt;
+    text-transform: lowercase;
+    text-align: center;
+    -webkit-text-fill-color: black;
+    /* Will override color (regardless of order) */
+    
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: yellow;
+    margin: 0;
+	line-height: 110px;
+	margin-bottom: 20px;
+    margin-left: -6px;
+    z-index: 100;
+}
+img.starwars_glow_img2 {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    -webkit-transform: translate(-50%, -35%);
+    transform: translate(-50%, -35%);
+    opacity: 0;
+}
+table.top-text-table2 {
+    margin: auto auto;
+    text-align: center;
+    opacity: 0;
+}
+table.bottom-text-table2 {
+    margin: auto auto;
+    text-align: center;
+    opacity: 0;
+}
+img.starwars_glow_img_right2 {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+    opacity: 0;
+}
+p.top-text2 {
+    font-size: 25pt;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 20px #40e9ed, 0px 0px 5px #40e9ed;
+    margin: 0;
+    -webkit-animation-name: text_saber;
+    -webkit-animation-duration: 0.7s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    opacity: 0;
+}
+p.bottom-text2 {
+    font-size: 15pt;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 20px #40e9ed, 0px 0px 5px #40e9ed;
+    margin: 0;
+    -webkit-animation-name: text_saber;
+    -webkit-animation-duration: 0.7s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    opacity: 0;
+}
+/* Here begins the normal */
+
+#background {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -100;
+}
+#bg1 {
+    background: url('../images/bg1.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.bottom-box {
+    background: black;
+    height: 300px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.bottom-sub-box-table{
+margin: 0;
+    margin-left:auto; 
+    margin-right:auto;
+}
+@-moz-keyframes saber_static {
+    0% {
+        -webkit-box-shadow: 0px 0px 32px 12px rgba(80, 177, 183, 0.85), 0px 0px 197px 67px rgba(54, 137, 142, 0.15);
+    }
+    25% {
+        -webkit-box-shadow: 0px 0px 32px 12px rgba(80, 177, 183, 0.85), 0px 0px 197px 67px rgba(54, 137, 142, 0.12);
+    }
+    50% {
+        -webkit-box-shadow: 0px 0px 32px 12px rgba(80, 177, 183, 0.85), 0px 0px 197px 67px rgba(54, 137, 142, 0.11);
+    }
+    75% {
+        -webkit-box-shadow: 0px 0px 32px 12px rgba(80, 177, 183, 0.85), 0px 0px 197px 67px rgba(54, 137, 142, 0.15);
+    }
+    100% {
+        -webkit-box-shadow: 0px 0px 32px 12px rgba(80, 177, 183, 0.85), 0px 0px 197px 67px rgba(54, 137, 142, 0.13);
+    }
+}
+@-webkit-keyframes saber_static {
+    0% {
+        -webkit-box-shadow: 0px 0px 32px 12px rgba(80, 177, 183, 0.85), 0px 0px 197px 67px rgba(54, 137, 142, 0.15);
+    }
+    25% {
+        -webkit-box-shadow: 0px 0px 32px 12px rgba(80, 177, 183, 0.85), 0px 0px 197px 67px rgba(54, 137, 142, 0.12);
+    }
+    50% {
+        -webkit-box-shadow: 0px 0px 32px 12px rgba(80, 177, 183, 0.85), 0px 0px 197px 67px rgba(54, 137, 142, 0.11);
+    }
+    75% {
+        -webkit-box-shadow: 0px 0px 32px 12px rgba(80, 177, 183, 0.85), 0px 0px 197px 67px rgba(54, 137, 142, 0.15);
+    }
+    100% {
+        -webkit-box-shadow: 0px 0px 32px 12px rgba(80, 177, 183, 0.85), 0px 0px 197px 67px rgba(54, 137, 142, 0.13);
+    }
+}
+@keyframes saber_static {
+    0% {
+        -webkit-box-shadow: 0px 0px 32px 12px rgba(80, 177, 183, 0.85), 0px 0px 197px 67px rgba(54, 137, 142, 0.15);
+    }
+    25% {
+        -webkit-box-shadow: 0px 0px 32px 12px rgba(80, 177, 183, 0.85), 0px 0px 197px 67px rgba(54, 137, 142, 0.12);
+    }
+    50% {
+        -webkit-box-shadow: 0px 0px 32px 12px rgba(80, 177, 183, 0.85), 0px 0px 197px 67px rgba(54, 137, 142, 0.11);
+    }
+    75% {
+        -webkit-box-shadow: 0px 0px 32px 12px rgba(80, 177, 183, 0.85), 0px 0px 197px 67px rgba(54, 137, 142, 0.15);
+    }
+    100% {
+        -webkit-box-shadow: 0px 0px 32px 12px rgba(80, 177, 183, 0.85), 0px 0px 197px 67px rgba(54, 137, 142, 0.13);
+    }
+}
+@-moz-keyframes text_saber {
+    0% {
+        text-shadow: 1px 1px 20px #40e9ed, 1px 1px 10px #40e9ed, 1px 1px 200px #40e9ed;
+    }
+    25% {
+        text-shadow: 1px 1px 20px #40e9ed, 1px 1px 15px #40e9ed, 1px 1px 200px #40e9ed;
+    }
+    50% {
+        text-shadow: 1px 1px 20px #40e9ed, 1px 1px 8px #40e9ed, 1px 1px 200px #40e9ed;
+    }
+    75% {
+        -text-shadow: 1px 1px 20px #40e9ed, 1px 1px 16px #40e9ed, 1px 1px 200px #40e9ed;
+    }
+    100% {
+        text-shadow: 1px 1px 20px #40e9ed, 1px 1px 15px #40e9ed, 1px 1px 200px #40e9ed;
+    }
+}
+@-webkit-keyframes text_saber {
+    0% {
+        text-shadow: 1px 1px 20px #40e9ed, 1px 1px 10px #40e9ed;
+    }
+    25% {
+        text-shadow: 1px 1px 20px #40e9ed, 1px 1px 15px #40e9ed, 1px 1px 200px #40e9ed;
+    }
+    50% {
+        text-shadow: 1px 1px 20px #40e9ed, 1px 1px 8px #40e9ed, 1px 1px 200px #40e9ed;
+    }
+    75% {
+        -text-shadow: 1px 1px 20px #40e9ed, 1px 1px 16px #40e9ed, 1px 1px 200px #40e9ed;
+    }
+    100% {
+        text-shadow: 1px 1px 20px #40e9ed, 1px 1px 15px #40e9ed, 1px 1px 200px #40e9ed;
+    }
+}
+@keyframes text_saber {
+    0% {
+        text-shadow: 1px 1px 20px #40e9ed, 1px 1px 10px #40e9ed, 1px 1px 200px #40e9ed;
+    }
+    25% {
+        text-shadow: 1px 1px 20px #40e9ed, 1px 1px 15px #40e9ed, 1px 1px 200px #40e9ed;
+    }
+    50% {
+        text-shadow: 1px 1px 20px #40e9ed, 1px 1px 8px #40e9ed, 1px 1px 200px #40e9ed;
+    }
+    75% {
+        -text-shadow: 1px 1px 20px #40e9ed, 1px 1px 16px #40e9ed, 1px 1px 200px #40e9ed;
+    }
+    100% {
+        text-shadow: 1px 1px 20px #40e9ed, 1px 1px 15px #40e9ed, 1px 1px 200px #40e9ed;
+    }
+}
+.text-middle {
+    width: 70%;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    -webkit-transform: translate(-50%, -35%);
+    transform: translate(-50%, -35%);
+}
+p.server-name {
+    font-family: starwarshollow;
+    font-size: 90pt;
+    -webkit-animation-name: text_saber;
+    -webkit-animation-duration: 0.7s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    text-transform: lowercase;
+    text-align: center;
+    margin: 0;
+	line-height: 110px;
+	margin-bottom: 20px;
+}
+img.starwars_glow_img {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    -webkit-transform: translate(-50%, -35%);
+    transform: translate(-50%, -35%);
+}
+table.top-text-table {
+    margin: auto auto;
+    text-align: center;
+}
+table.bottom-text-table {
+    margin: auto auto;
+    text-align: center;
+}
+img.starwars_glow_img_right {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+p.top-text {
+    font-size: 25pt;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 20px #40e9ed, 0px 0px 5px #40e9ed;
+    margin: 0;
+    -webkit-animation-name: text_saber;
+    -webkit-animation-duration: 0.7s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
+p.bottom-text {
+    font-size: 15pt;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 20px #40e9ed, 0px 0px 5px #40e9ed;
+    margin: 0;
+    -webkit-animation-name: text_saber;
+    -webkit-animation-duration: 0.7s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
+#load-box {
+    background-color: #ef4541;
+    -webkit-box-shadow: 0px 0px 32px 6px rgba(239, 68, 65, 0.65);
+    -moz-box-shadow: 0px 0px 32px 6px rgba(239, 68, 65, 0.65);
+    box-shadow: 0px 0px 32px 6px rgba(239, 68, 65, 0.65);
+    height: 3px;
+    margin: auto auto;
+    margin-top: 10px;
+    width: 100%;
+	margin-top: -2px;
+}
+#load-box-width {
+    background-color: #40e9ed;
+    -webkit-animation-name: saber_static;
+    -webkit-animation-duration: 0.8s;
+    -webkit-animation-timing-function: nonlinear;
+    -webkit-animation-iteration-count: infinite;
+    height: 3px;
+    opacity: 1;
+}
+table.bottom-box-table {
+    margin: 0;
+    margin: auto auto;
+	
+margin-top: 30px;
+}
+img.choosesideimg {
+  display: table-caption;
+    margin: 0 auto;   width: 562px;
+}
+svg.avatar-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	margin-top: -98px;
+}
+p.choose-side-bottom {
+    font-size: 15pt;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    margin-top: 3%;
+}
+p.bottom-text-title {
+    font-size: 19pt;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
+img.starwars_pin_img_left {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+p.bottom-text-subtitle {
+    font-size: 10pt;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
+span#map,
+span#gamemode,
+span#timeago {
+    color: #3cc5c8;
+    margin: 0;
+}
+.right_bottom_text_column {
+    font-family: Arial;
+    font-size: 9pt;
+    text-align: center;
+}
+.right_bottom_image_divider {
+    display: table;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+img.starwars_pin_divider_left {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+.left-side-text-box {
+    font-family: arial;
+    font-size: 9pt;
+    padding: 2%;
+    overflow: hidden;
+}
